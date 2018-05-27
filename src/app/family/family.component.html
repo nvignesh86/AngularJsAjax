@@ -1,0 +1,13 @@
+<mat-toolbar>
+  <span>{{member |async  }} Family</span>
+</mat-toolbar>
+<div>Seleted Member {{relation | async}} </div>
+<div class="button-row">  
+  <button mat-raised-button color="primary" (click)="navigateToMember('mother')">Mother</button>
+  <button mat-raised-button color="primary" (click)="navigateToMember('father')">Father</button>
+  <button mat-raised-button color="primary" (click)="navigateToMember('brother')">Brother</button>
+  <button mat-raised-button color="primary" (click)="navigateToMember('spouse')">Spouse</button>
+  <button mat-raised-button color="primary" (click)="navigateToMember('daughter')">Daughter</button>
+  <button mat-raised-button color="primary" (click)="navigateToMember('son')">Son</button>
+</div>
+<router-outlet></router-outlet>

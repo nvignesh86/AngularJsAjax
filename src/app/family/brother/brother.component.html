@@ -1,0 +1,12 @@
+<div>
+  <div>Brother</div>
+  <mat-grid-list cols="2" rowHeight="2:2">
+    <mat-grid-tile>
+      <img style="width:400px;height:400px" src="/assets/images/brother.jpg" rounded />
+    </mat-grid-tile>
+    <mat-grid-tile>
+      {{brotherName|async}}
+      <button mat-raised-button color="primary" (click)="changeMember()">Click</button>
+    </mat-grid-tile>    
+  </mat-grid-list>          
+</div>    
